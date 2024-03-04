@@ -8,8 +8,8 @@ on:
 
 jobs:
 
-  call-workflow-1-in-local-repo:
-    uses: maksonrochati/cypress-poc-2/.github/actions/workflows/qaops.yaml
+  call-workflow:
+    uses: maksonrochati/cypress-poc-2/.github/actions/workflows/qaops.yaml@main
   
   cypress-run:
     runs-on: ubuntu-22.04
