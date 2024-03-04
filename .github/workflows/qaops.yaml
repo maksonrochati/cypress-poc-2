@@ -6,6 +6,11 @@ on:
     workflow_dispatch:
 
 jobs:
+
+  call-workflow-1-in-local-repo:
+    uses: maksonrochati/cypress-poc-2/.github/actions/workflows/qaops.yaml
+    https://github.com/maksonrochati/cypress-poc-2/actions/workflows/qaops.yaml
+  
   cypress-run:
     runs-on: ubuntu-22.04
     steps:
