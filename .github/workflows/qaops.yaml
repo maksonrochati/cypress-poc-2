@@ -9,10 +9,11 @@ jobs:
   cypress-run:
     runs-on: ubuntu-22.04
     steps:
-      - name: Checkout
+      - name: Checkout v4
         uses: actions/checkout@v4
 
-      - uses: actions/checkout@v2
+      - name: Checkout v2
+        uses: actions/checkout@v2
         with:
             repository: maksonrochati/cypress-poc-1
             #token: ${{ secrets.GH_TOKEN }}
