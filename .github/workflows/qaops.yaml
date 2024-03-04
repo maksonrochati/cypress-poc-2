@@ -4,11 +4,10 @@ on:
     #push
 
     workflow_dispatch:
-    
 
 jobs:
 
-  call-workflow:
+  Cypress-Poc-1:
     uses: maksonrochati/cypress-poc-1/.github/workflows/qaops.yaml@main
   
   cypress-run:
