@@ -10,7 +10,7 @@ jobs:
   Cypress-Poc-1:
     uses: maksonrochati/cypress-poc-1/.github/workflows/qaops.yaml@main
   
-  cypress-run:
+  Cypress-Poc-2:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout v4
