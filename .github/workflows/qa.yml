@@ -25,4 +25,4 @@ jobs:
       - name: Cypress run
         #uses: cypress-io/github-action@v5
         #with:
-        run: npx cypress run
+        run: npm install, npx cypress run
