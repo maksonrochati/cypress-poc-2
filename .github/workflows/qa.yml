@@ -9,7 +9,7 @@ on:
 
 jobs:
   cypress-workflow:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout v4
         uses: actions/checkout@v4
@@ -23,4 +23,4 @@ jobs:
        
           
       - name: Cypress run
-        uses: cypress-io/github-action@v6
+        run: git --version
