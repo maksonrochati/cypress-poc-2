@@ -4,25 +4,22 @@ on:
     #push
 
     workflow_dispatch:
-    workflow_call:
+    
 
 jobs:
 
   call-workflow:
-    uses: maksonrochati/cypress-poc-2/.github/actions/workflows/qaops.yaml@main
+    uses: maksonrochati/cypress-poc-1/.github/workflows/qaops.yml@main
   
-  cypress-run:
-    runs-on: ubuntu-22.04
-    steps:
-      - name: Checkout v4
-        uses: actions/checkout@v4
+  #cypress-run:
+    #runs-on: ubuntu-22.04
+    #steps:
+      #- name: Checkout v4
+       # uses: actions/checkout@v4
 
-      - name: Checkout v2
-        uses: actions/checkout@v2
-        with:
-            repository: maksonrochati/cypress-poc-1
-            #token: ${{ secrets.GH_TOKEN }}
-            path: .github/actions/workflows/qaops.yaml
+      #- name: Checkout v2
+       # uses: actions/checkout@v2
+       
           
-      - name: Cypress run
-        uses: cypress-io/github-action@v6
+     # - name: Cypress run
+       # uses: cypress-io/github-action@v6
