@@ -23,4 +23,6 @@ jobs:
        
           
       - name: Cypress run
-        run: git --version
+        uses: cypress-io/github-action@v6
+        with:
+            spec: cypress/e2e/1-getting-started/todo.cy.js
