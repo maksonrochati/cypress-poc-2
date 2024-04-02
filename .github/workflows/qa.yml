@@ -22,11 +22,14 @@ jobs:
     #uses: maksonrochati/cypress-poc-1/.github/workflows/qaops.yml@poc
   
 
-      #- name: Exec Spec Poc 2
-        #run: npx cypress run --spec "cypress/e2e/teste/todo.cy.js"
+      - name: Npm install
+        run: npm install
+
+      - name: Exec Spec Poc 2
+        run: npx cypress run --spec "cypress/e2e/teste/todo.cy.js"
        
           
-      - name: Cypress run
-        uses: cypress-io/github-action@v5
-        with:
-            command: npx cypress run --spec "cypress/e2e/teste/todo.cy.js"
+      #- name: Cypress run
+        #uses: cypress-io/github-action@v5
+        #with:
+            #command: npx cypress run --spec "cypress/e2e/teste/todo.cy.js"
