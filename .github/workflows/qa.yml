@@ -6,7 +6,7 @@ on:
     workflow_dispatch:
     workflow_call:
         inputs:
-            command:
+            working-directory:
                 description: 'Teste'
                 required: false
                 type: string
