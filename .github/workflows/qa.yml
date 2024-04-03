@@ -5,6 +5,11 @@ on:
 
     workflow_dispatch:
     workflow_call:
+        inputs:
+            command:
+                description: 'Teste'
+                required: false
+                type: string
         
     
 
@@ -32,4 +37,5 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
-            command: npx cypress run --spec "cypress/e2e/teste/todo.cy.js"
+            command: $ {{ inputs.command }}
+            #command: npx cypress run --spec "cypress/e2e/teste/todo.cy.js"
