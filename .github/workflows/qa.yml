@@ -37,5 +37,5 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
-            command: $ {{ inputs.command }}
+            command: $ {{ inputs.working-directory }}
             #command: npx cypress run --spec "cypress/e2e/teste/todo.cy.js"
