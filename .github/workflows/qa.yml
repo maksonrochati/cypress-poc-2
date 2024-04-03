@@ -16,7 +16,7 @@ jobs:
       - name: Checkout v4
         uses: actions/checkout@v4
         with:
-            command: npx cypress run --spec "cypress/e2e/teste/todo.cy.js"
+            path: cypress/e2e/teste/todo.cy.js
 
  # call-workflow:
     #uses: maksonrochati/cypress-poc-1/.github/workflows/qaops.yml@poc
