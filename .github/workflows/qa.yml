@@ -5,11 +5,7 @@ on:
 
     workflow_dispatch:
     workflow_call:
-        inputs:
-            spec:
-                description: 'Teste'
-                required: false
-                type: string
+      
         
     
 
