@@ -5,10 +5,7 @@ on:
 
     workflow_dispatch:
     workflow_call:
-        inputs:
-            config-path:
-                required: true
-                type: string
+        
     
 
 jobs:
