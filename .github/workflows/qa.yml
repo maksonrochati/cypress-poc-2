@@ -28,16 +28,16 @@ jobs:
      # - name: Npm install
       #  run: npm install
 
-      - name: Cypress install
-        run: npm install cypress
+      #- name: Cypress install
+        #run: npm install cypress
 
-      - name: Exec Spec Poc 2
-        run: npx cypress run --spec "cypress/e2e/teste/todo.cy.js"
+      #- name: Exec Spec Poc 2
+        #run: npx cypress run --spec "cypress/e2e/teste/todo.cy.js"
        
           
-      #- name: Cypress run poc 2
-       # uses: cypress-io/github-action@v5
-       # with:
-        #    spec: cypress/e2e/teste/todo.cy.js
+      - name: Cypress run poc 2
+        uses: cypress-io/github-action@v5
+        with:
+            command: npx cypress run --project cypress --spec cypress/e2e/teste/todo.cy.js
         
        
