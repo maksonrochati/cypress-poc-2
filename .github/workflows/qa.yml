@@ -31,6 +31,6 @@ jobs:
         #run: npx cypress run --spec "cypress/e2e/teste/todo.cy.js"
        
           
-      - name: Cypress run
+      - name: Cypress run poc 2
         uses: cypress-io/github-action@v5
        
