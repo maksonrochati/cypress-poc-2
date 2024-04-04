@@ -37,6 +37,5 @@ jobs:
           
       - name: Cypress run poc 2
         uses: cypress-io/github-action@v5
-        with:    
-            start: npm test
+        
        
