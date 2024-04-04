@@ -41,9 +41,9 @@ jobs:
       #      project: ./teste
 
       - name: Cypress run poc 2
-        uses: ./
+        uses: ./teste
         with:
-            working-directory: ./teste
+            working-directory: qa.yml
             start: npx cypress run
         
        
