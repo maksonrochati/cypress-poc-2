@@ -35,9 +35,15 @@ jobs:
         #run: npx cypress run --spec "cypress/e2e/teste/todo.cy.js"
        
           
+     # - name: Cypress run poc 2
+     #   uses: cypress-io/github-action@v4
+     #   with:
+      #      project: ./teste
+
       - name: Cypress run poc 2
-        uses: cypress-io/github-action@v4
+        uses: ./
         with:
-            project: ./teste
+            working-directory: ./teste
+            start: npx cypress run
         
        
