@@ -17,7 +17,7 @@ jobs:
   cypress-workflow:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout v4
+      - name: Checkout v4 poc 2
         uses: actions/checkout@v4
         # with:
         #      repository: maksonrochati/cypress-poc-2
@@ -37,7 +37,7 @@ jobs:
         #run: npx cypress run --spec "cypress/e2e/teste/todo.cy.js"
        
           
-      - name: Cypress run
+      - name: Cypress run test
         uses: cypress-io/github-action@v2
         # with:
         #     command: npx cypress run --spec "cypress/e2e/teste/todo.cy.js"
