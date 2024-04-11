@@ -38,6 +38,6 @@ jobs:
        
           
       - name: Cypress run test
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v6
         # with:
         #     command: npx cypress run --spec "cypress/e2e/teste/todo.cy.js"
