@@ -19,8 +19,8 @@ jobs:
     steps:
       - name: Checkout v4
         uses: actions/checkout@v4
-        with:
-             repository: maksonrochati/cypress-poc-2
+        # with:
+        #      repository: maksonrochati/cypress-poc-2
         #     path: cypress/e2e/teste/todo.cy.js
 
  # call-workflow:
@@ -38,6 +38,6 @@ jobs:
        
           
       - name: Cypress run
-        uses: cypress-io/github-action@v5
-        with:
-            command: npx cypress run --spec "cypress/e2e/teste/todo.cy.js"
+        uses: cypress-io/github-action@v2
+        # with:
+        #     command: npx cypress run --spec "cypress/e2e/teste/todo.cy.js"
