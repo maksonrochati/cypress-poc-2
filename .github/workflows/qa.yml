@@ -5,10 +5,10 @@ on:
 
     workflow_dispatch:
     workflow_call:
-         inputs:
-            config-path:
-                required: true
-                type: string
+         # inputs:
+         #    config-path:
+         #        required: true
+         #        type: string
       
         
     
@@ -19,9 +19,9 @@ jobs:
     steps:
       - name: Checkout v4
         uses: actions/checkout@v4
-        with:
-            repository: maksonrochati/cypress-poc-2
-            path: cypress/e2e/teste/todo.cy.js
+        # with:
+        #     repository: maksonrochati/cypress-poc-2
+        #     path: cypress/e2e/teste/todo.cy.js
 
  # call-workflow:
     #uses: maksonrochati/cypress-poc-1/.github/workflows/qaops.yml@poc
