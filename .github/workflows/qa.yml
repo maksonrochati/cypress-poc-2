@@ -19,8 +19,8 @@ jobs:
     steps:
       - name: Checkout v4 poc 2
         uses: actions/checkout@v4
-        # with:
-        #      repository: maksonrochati/cypress-poc-2
+        with:
+            repository: maksonrochati/cypress-poc-2
         #     path: cypress/e2e/teste/todo.cy.js
 
  # call-workflow:
